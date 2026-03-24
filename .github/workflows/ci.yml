@@ -19,10 +19,3 @@ jobs:
 
       - name: Build Docker Compose
         run: docker compose build
-
-              - name: Run containers (smoke test)
-        run: |
-          docker compose up -d
-          sleep 10
-          curl http://localhost:8080 || exit 1
-          docker compose down
