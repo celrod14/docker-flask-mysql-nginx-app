@@ -3,6 +3,8 @@ import mysql.connector
 import os
 import time
 
+# test comment
+
 app = Flask(__name__)
 
 def get_db_connection():
